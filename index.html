@@ -17,27 +17,68 @@
 .mideltank-font {
     font-family: "Mideltank", sans-serif;
 }
-</style>
+
+@font-face {
+    font-family: "Dynatecha";
+    src: url("fonts/Dynatecha.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.dynatecha-font {
+    font-family: "Dynatecha", sans-serif;
+}
+
+@font-face {
+    font-family: "Stormfaze";
+    src: url("fonts/Stormfaze.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.stormfaze-font {
+    font-family: "Stormfaze", sans-serif;
+}
+
+    </style>
 
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <header class="bg-slate-900">
-        <nav class="flex bg-gre border items-center py-2 gap-50">
-            <div class="text-white ml-15">
+        <nav class="flex bg-zinc-900 items-center justify-between px-4 md:px-10 py-2">
+            <div class="text-white">
                 <a href="index.html" class="logo">
-                    <img src="img/mythoria_logo.jpg" alt="logo" class="w-70">
+                    <img src="img/mythoria_logo.jpg" alt="logo" class="w-32 sm:w-48 md:w-70">
                 </a>
             </div>
-            <div class="text-white mideltank-font flex gap-10 ml-155">
+            <div class="text-white mideltank-font flex gap-4 sm:gap-6 md:gap-10 text-sm sm:text-base">
                 <a href="index.html" class="hover:text-yellow-200">Home</a>
                 <a href="shop.html" class="hover:text-yellow-200">Booster Shop</a>
+                <a href="collection.html" class="hover:text-yellow-200">Collection</a>
             </div>
         </nav>
     </header>
     
     <main>
-        <img src="img/mythoria_background.jpg" alt="background">
+        <section class="relative w-full min-h-[calc(100dvh-72px)] overflow-hidden bg-black">
+            <div class="absolute inset-0 bg-[url(img/mythoria_background.jpg)] bg-cover bg-center bg-no-repeat brightness-50"></div>
+            <div class="relative z-10 flex flex-col items-center justify-center text-center min-h-[calc(100dvh-72px)] px-4 gap-4 md:gap-6">
+                <h1 class="text-shadow-lg/30 text-5xl sm:text-7xl md:text-8xl lg:text-9xl mideltank-font text-white">MYTHORIA</h1>
+                <p class="text-shadow-lg/30 text-sm sm:text-lg md:text-1xl dynatecha-font text-white">Every pack holds a legend that could change your fate</p>
+                <div>
+                    <a href="shop.html">
+                        <button type="button" class="shadow-[0_0_7px_black] bg-yellow-200 text-black stormfaze-font px-6 py-2 rounded-sm cursor-pointer hover:bg-yellow-400 transition">
+                            Discover the boosters
+                        </button>
+                    </a>
+                    <a href="collection.html">
+                        <button type="button" class="shadow-[0_0_7px_black] bg-yellow-200 text-black stormfaze-font px-6 py-2 rounded-sm cursor-pointer hover:bg-yellow-400 transition">
+                            Open my grimoire
+                        </button>
+                    </a>
+                </div>
+        </section>
     </main>
 </body>
 </html>
