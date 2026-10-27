@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mythoria</title>
+    <title>Mythoria | Home</title>
     <link rel="icon" href="img/mythoria_icon.png">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
@@ -80,7 +80,7 @@
     </header>
     
     <main>
-        <div class="bg-[url(/img/mythoria_background.jpg)] w-full h-screen bg-no-repeat bg-cover bg-center pt-60 flex flex-col gap-5">
+        <section class="bg-[url(/img/mythoria_background.jpg)] w-full h-screen bg-no-repeat bg-cover bg-center pt-60 flex flex-col gap-5">
             <h1 class="text-white text-9xl text-shadow-lg text-shadow-black text-center mideltank-font">MYTHORIA</h1>
             <p class="text-white text-lg text-shadow-md text-shadow-black text-center dynatecha-font">Open the pack and awaken the legend</p>
             <div class="flex justify-center gap-3">
@@ -91,16 +91,120 @@
                     <button class="cursor-pointer shadow-md shadow-black border bg-yellow-100 hover:bg-yellow-200 w-60 h-10 stormfaze-font text-sm rounded-sm">Open my grimoire</button>
                 </a>
             </div>
-        </div>
-        <div class="bg-black w-full h-screen flex flex-col justify-center">
-            <h1 class="text-white">Cards overview</h1>
-            <div class="flex w-60 gap-10">
-                <img src="img/card_creature.png">
-                <img src="img/card_hero.png">
-                <img src="img/card_spell.png">
-                <img src="img/card_servant.png">
+        </section>
+        <section class="bg-[#0A0909] w-full h-full flex flex-col items-center border-t border-[#D4B66A]/40 py-40 gap-20">
+            <div class="flex flex-col gap-1 text-[#D4B66A]">
+                <h1 class="text-4xl mideltank-font">The Realms of Mythoria</h1>
+                <p class="mideltank-font text-lg text-center">Four ways to play</p>
             </div>
-        </div>
+            <div class="flex flex-wrap justify-center items-start w-full gap-20 px-6">
+                <div class="flex flex-col items-center gap-7 w-50 border">
+                    <img src="img/card_creature.png" alt="creature card" class="w-50 border border-yellow-100">
+                    <p class="text-[#C9C4BB] text-md text-center leading-relaxed">Unleash mythical beasts and ancient horrors upon your enemies.</p>
+                </div>
+                <div class="flex flex-col items-center gap-7 w-50">
+                    <img src="img/card_hero.png" alt="hero card" class="w-50 border border-yellow-100">
+                    <p class="text-[#C9C4BB] text-md text-center leading-relaxed">Lead your deck with legendary champions and powerful abilities.</p>
+                </div>
+                <div class="flex flex-col items-center gap-7 w-50">
+                    <img src="img/card_spell.png" alt="spell card" class="w-50 border border-yellow-100">
+                    <p class="text-[#C9C4BB] text-md text-center leading-relaxed">Bend the arcane to unleash devastating magic.</p>
+                </div>
+                <div class="flex flex-col items-center gap-7 w-50">
+                    <img src="img/card_servant.png" alt="servant card" class="w-50 border border-yellow-100">
+                    <p class="text-[#C9C4BB] text-md text-center leading-relaxed">Summon loyal allies to fight at your command.</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#17121F] w-full h-full border-t border-[#D4B66A]/40 py-40 flex flex-col gap-20">
+            <div class="flex flex-col gap-1 text-[#D4B66A]">
+                <h1 class="mideltank-font text-center text-4xl">The Booster Vault</h1>
+                <p class="mideltank-font text-center text-lg">Pick your pack, pick your destiny</p>
+            </div>
+            <div class="flex flex-wrap w-full h-full justify-center items-start px-10 gap-15">
+                <div class="border border-[#D4B66A] bg-[#211A29] w-75 h-130 justify-center items-center flex flex-col gap-5 rounded-md hover:-translate-y-5 duration-200">
+                    <img src="img/mythoria_starter_pack.png" alt="starter pack" class="w-50 h-82">
+                    <div class="flex flex-col gap-2">
+                        <p class="text-center font-bold text-[#D4B66A]">BOOSTER PRICE</p>
+                        <a href="shop.html">
+                            <button class="border font-medium bg-[#EDD693] hover:bg-[#D4B66A] cursor-pointer w-35 h-10 rounded-md">39DH</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="border border-[#D4B66A] bg-[#211A29] w-75 h-130 justify-center items-center flex flex-col gap-5 rounded-md hover:-translate-y-5 duration-200">    
+                    <img src="img/mythoria_dark_invocation.png" alt="dark invocation" class="w-50 h-82">
+                    <div class="flex flex-col gap-2">
+                        <p class="text-center font-bold text-[#D4B66A]">BOOSTER PRICE</p>
+                        <a href="shop.html">
+                            <button class="border font-medium bg-[#EDD693] hover:bg-[#D4B66A] cursor-pointer w-35 h-10 rounded-md">59DH</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="border border-[#D4B66A] bg-[#211A29] w-75 h-130 justify-center items-center flex flex-col gap-5 rounded-md hover:-translate-y-5 duration-200">
+                    <img src="img/mythoria_lucky_pack.png" alt="lucky pack" class="w-50 h-82">
+                    <div class="flex flex-col gap-2">
+                        <p class="text-center font-bold text-[#D4B66A]">BOOSTER PRICE</p>
+                        <a href="shop.html">
+                            <button class="border font-medium bg-[#EDD693] hover:bg-[#D4B66A] cursor-pointer w-35 h-10 rounded-md">89DH</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="border border-[#D4B66A] bg-[#211A29] w-75 h-130 justify-center items-center flex flex-col gap-5 rounded-md hover:-translate-y-5 duration-200">
+                    <img src="img/mythoria_premium_pack.png" alt="premium pack" class="w-50 h-82">
+                    <div class="flex flex-col gap-2">
+                        <p class="text-center font-bold text-[#D4B66A]">BOOSTER PRICE</p>
+                        <a href="shop.html">
+                            <button class="border font-medium bg-[#EDD693] hover:bg-[#D4B66A] cursor-pointer w-35 h-10 rounded-md">129DH</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#200D12] w-full h-full flex flex-col items-center border-t border-[#D4B66A]/40 py-40 gap-20">
+            <div class="flex flex-col gap-1 text-[#D4B66A]">
+                <h1 class="text-4xl mideltank-font text-center">Legends of Mythoria</h1>
+                <p class="mideltank-font text-lg text-center">Discover the heroes and creatures whose power shaped the realm</p>
+            </div>
+            <div class="flex flex-wrap justify-center items-start w-full gap-20 px-6 drop-shadow-[0_0_12px_rgba(212,182,106,0.4)]">
+                <div class="flex flex-col items-center gap-7 w-80">
+                    <img src="img/legendary1.jpg" alt="Legendary card 1" class="w-70 h-100 hover:scale-110 transition duration-300">
+                </div>
+                <div class="flex flex-col items-center gap-7 w-80">
+                    <img src="img/legendary2.jpg" alt="Legendary card 2" class="w-70 h-100 hover:scale-110 transition duration-300">
+                </div>
+                <div class="flex flex-col items-center gap-7 w-80">
+                    <img src="img/legendary3.jpg" alt="spell card" class="w-70 h-100 hover:scale-110 transition duration-300">
+                </div>
+                <div class="flex flex-col items-center gap-7 w-80">
+                    <img src="img/legendary4.jpg" alt="servant card" class="w-70 h-100 hover:scale-110 transition duration-300">
+                </div>
+                <div class="flex flex-col items-center gap-7 w-80">
+                    <img src="img/legendary5.jpg" alt="servant card" class="w-70 h-100 hover:scale-110 transition duration-300">
+                </div>
+            </div>
+        </section>
     </main>
 </body>
+<footer class="bg-[#0A0909] w-full px-10 py-15 border-t border-[#D4B66A]/40">
+    <div class="flex flex-col md:flex-row justify-between gap-12">
+        <div class="flex flex-col gap-3">
+            <h1 class="text-3xl mideltank-font text-[#D4B66A]">MYTHORIA</h1>
+            <p class="text-[#C9C4BB]">Forge your legend. Shape your destiny.</p>
+        </div>
+        <div class="flex flex-col gap-3">
+            <h2 class="text-lg font-bold text-[#D4B66A]">EXPLORE</h2>
+            <a href="index.html" class="text-[#C9C4BB] hover:text-[#D4B66A] transition">Home</a>
+             <a href="shop.html" class="text-[#C9C4BB] hover:text-[#D4B66A] transition">Booster Shop</a>
+            <a href="collection.html" class="text-[#C9C4BB] hover:text-[#D4B66A] transition">Collection</a>
+        </div>
+        <div class="flex flex-col gap-3">
+            <h2 class="text-lg font-bold text-[#D4B66A]">CONTACT</h2>
+            <p class="text-[#C9C4BB]">Ready to enter the realm?</p>
+            <a href="#" class="text-[#C9C4BB] hover:text-[#D4B66A] transition">Contact Us</a>
+        </div>
+    </div>
+    <div class="mt-12 pt-5 border-t border-white/10 text-center">
+        <p class="text-sm text-[#A7A09A]">&copy; 2026 Mythoria. All rights reserved.</p>
+    </div>
+</footer>
 </html>
