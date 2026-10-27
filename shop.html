@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mythoria | Booster Shop</title>
+    <link rel="icon" href="img/mythoria_icon.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+@font-face {
+    font-family: "Mideltank";
+    src: url("fonts/Mideltank.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.mideltank-font {
+    font-family: "Mideltank", sans-serif;
+}
+
+@font-face {
+    font-family: "Dynatecha";
+    src: url("fonts/Dynatecha.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.dynatecha-font {
+    font-family: "Dynatecha", sans-serif;
+}
+
+@font-face {
+    font-family: "Stormfaze";
+    src: url("fonts/Stormfaze.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.stormfaze-font {
+    font-family: "Stormfaze", sans-serif;
+}
+
+@font-face {
+    font-family: "Varsity";
+    src: url("fonts/Varsity.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.varsity-font {
+    font-family: "Varsity", sans-serif;
+}
+
+
+    </style>
+
 </head>
 <body>
-    <p>shop</p>
+    <header>
+        <nav class="bg-black w-full h-17">
+            <div class="flex justify-around items-center w-full h-17">
+                <div>
+                    <a href="index.html" class="logo">
+                        <img src="img/mythoria_logo.jpg" alt="logo" class="w-65">
+                    </a>
+                </div>
+                <div class="flex gap-15 text-white mideltank-font">
+                    <a href="index.html" class="hover:text-yellow-200">Home</a>
+                    <a href="shop.html" class="hover:text-yellow-200">Booster Shop</a>
+                    <a href="opening.html" class="hover:text-yellow-200">Opening Chamber</a>
+                    <a href="collection.html" class="hover:text-yellow-200">Collection</a>
+                    <a href="deck.html" class="hover:text-yellow-200">My Deck</a>
+                </div>
+                <div>
+                    <a href="shop.html" class="Shopping cart">
+                        <img src="img/shopping-cart.png" alt="shopping cart" class="w-5">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
