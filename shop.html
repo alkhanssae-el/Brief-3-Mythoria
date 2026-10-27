@@ -55,7 +55,7 @@
     </style>
 
 </head>
-<body>
+<body class="bg-black w-full min-h-screen bg-no-repeat bg-cover bg-center flex flex-col gap-5">
     <header>
         <nav class="bg-black w-full h-17">
             <div class="flex justify-around items-center w-full h-17">
@@ -79,5 +79,211 @@
             </div>
         </nav>
     </header>
+    <main class="w-full min-h-screen flex flex-col items-center gap-5 p-10 md:p-20 bg-black text-white">
+
+    <h1 class="mideltank-font text-5xl md:text-8xl text-shadow-lg text-center">
+        BOOSTER SHOP
+    </h1>
+
+    <p class="stormfaze-font text-xl text-center">
+        Discover, collect, build your legend
+    </p>
+
+    <section class="flex flex-wrap justify-center items-stretch w-full max-w-300 gap-6 m-5">
+
+        <article class="flex flex-col border border-yellow-100/50 w-72 bg-black/70 backdrop-blur-md rounded-sm shadow-lg shadow-black overflow-hidden hover:border-yellow-300 transition duration-300">
+
+            <div class="flex justify-center items-center h-56 bg-gradient-to-b from-green-950 to-black p-4">
+                <img src="img/mythoria_starter_pack.png" alt="Beginner Pack" class="h-full max-w-full object-contain hover:-translate-y-2 transition duration-300">
+            </div>
+
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <h2 class="mideltank-font text-2xl text-yellow-100 text-center">
+                    Beginner Pack
+                </h2>
+
+                <p class="text-sm text-gray-300 text-center">
+                    Perfect for aspiring adventurers! Start your journey through Mythoria with a balanced selection of cards and discover powerful allies.
+                </p>
+
+                <div class="border-t border-yellow-100/30 pt-3">
+                    <p class="text-yellow-100 font-semibold mb-2">Contains 4 cards</p>
+                    <ul class="text-sm text-gray-300 space-y-1">
+                        <li>◇ 2 Common</li>
+                        <li>◇ 1 Rare</li>
+                        <li>◇ 1 Hero or Creature</li>
+                    </ul>
+                </div>
+
+                <div class="mt-auto">
+                    <p class="text-3xl text-yellow-100 font-bold mb-4">99DH</p>
+
+                    <label class="text-sm text-gray-300">Quantity</label>
+                    <input type="number" min="1" value="1" class="quantity w-full bg-gray-950 border border-yellow-100/40 p-2 mt-1 mb-4 text-center">
+
+                    <button type="button" data-name="Beginner Pack" data-price="99" class="add-to-cart w-full border border-yellow-100 text-yellow-100 p-3 hover:bg-yellow-100 hover:text-black transition">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <article class="flex flex-col border border-yellow-100/50 w-72 bg-black/70 backdrop-blur-md rounded-sm shadow-lg shadow-black overflow-hidden hover:border-purple-400 transition duration-300">
+
+            <div class="flex justify-center items-center h-56 bg-gradient-to-b from-purple-950 to-black p-4">
+                <img src="img/mythoria_premium_pack.png" alt="Summoning of the Legends" class="h-full max-w-full object-contain hover:-translate-y-2 transition duration-300">
+            </div>
+
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <h2 class="mideltank-font text-2xl text-yellow-100 text-center">
+                    Summoning of the Legends
+                </h2>
+
+                <p class="text-sm text-gray-300 text-center">
+                    Unleash ancient magic and seek the mightiest beings in Mythoria. Discover rare, epic, and legendary cards.
+                </p>
+
+                <div class="border-t border-yellow-100/30 pt-3">
+                    <p class="text-yellow-100 font-semibold mb-2">Contains 5 cards</p>
+                    <ul class="text-sm text-gray-300 space-y-1">
+                        <li>◇ 2 Rare</li>
+                        <li>◇ 1 Epic</li>
+                        <li>◇ 1 Legendary</li>
+                        <li>◇ 1 Hero</li>
+                    </ul>
+                </div>
+
+                <div class="mt-auto">
+                    <p class="text-3xl text-yellow-100 font-bold mb-4">129DH</p>
+
+                    <label class="text-sm text-gray-300">Quantity</label>
+                    <input type="number" min="1" value="1" class="quantity w-full bg-gray-950 border border-yellow-100/40 p-2 mt-1 mb-4 text-center">
+
+                    <button type="button" data-name="Summoning of the Legends" data-price="129" class="add-to-cart w-full border border-yellow-100 text-yellow-100 p-3 hover:bg-yellow-100 hover:text-black transition">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <article class="flex flex-col border border-yellow-100/50 w-72 bg-black/70 backdrop-blur-md rounded-sm shadow-lg shadow-black overflow-hidden hover:border-red-500 transition duration-300">
+
+            <div class="flex justify-center items-center h-56 bg-gradient-to-b from-red-950 to-black p-4">
+                <img src="img/mythoria_dark_invocation.png" alt="Dark Summoning" class="h-full max-w-full object-contain hover:-translate-y-2 transition duration-300">
+            </div>
+
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <h2 class="mideltank-font text-2xl text-yellow-100 text-center">
+                    Dark Summoning
+                </h2>
+
+                <p class="text-sm text-gray-300 text-center">
+                    Embrace the forbidden and command the forces of darkness. Discover terrifying monsters, sinister servants, and devastating spells.
+                </p>
+
+                <div class="border-t border-yellow-100/30 pt-3">
+                    <p class="text-yellow-100 font-semibold mb-2">Contains 5 cards</p>
+                    <ul class="text-sm text-gray-300 space-y-1">
+                        <li>◇ 2 Monsters</li>
+                        <li>◇ 2 Dark Servants</li>
+                        <li>◇ 1 Spell</li>
+                    </ul>
+                </div>
+
+                <div class="mt-auto">
+                    <p class="text-3xl text-yellow-100 font-bold mb-4">159DH</p>
+
+                    <label class="text-sm text-gray-300">Quantity</label>
+                    <input type="number" min="1" value="1" class="quantity w-full bg-gray-950 border border-yellow-100/40 p-2 mt-1 mb-4 text-center">
+
+                    <button type="button" data-name="Dark Summoning" data-price="159" class="add-to-cart w-full border border-yellow-100 text-yellow-100 p-3 hover:bg-yellow-100 hover:text-black transition">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+        </article>
+
+        <article class="flex flex-col border border-yellow-100/50 w-72 bg-black/70 backdrop-blur-md rounded-sm shadow-lg shadow-black overflow-hidden hover:border-blue-400 transition duration-300">
+
+            <div class="flex justify-center items-center h-56 bg-gradient-to-b from-blue-950 to-black p-4">
+                <img src="img/mythoria_lucky_pack.png" alt="Lucky Pack" class="h-full max-w-full object-contain hover:-translate-y-2 transition duration-300">
+            </div>
+
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <h2 class="mideltank-font text-2xl text-yellow-100 text-center">
+                    Lucky Pack
+                </h2>
+
+                <p class="text-sm text-gray-300 text-center">
+                    Fortune favors the bold! Open this mysterious booster for a random selection of cards and a chance to uncover an extraordinary rarity.
+                </p>
+
+                <div class="border-t border-yellow-100/30 pt-3">
+                    <p class="text-yellow-100 font-semibold mb-2">Contains 5 cards</p>
+                    <ul class="text-sm text-gray-300 space-y-1">
+                        <li>◇ Random card categories</li>
+                        <li>◇ Random rarities</li>
+                        <li>◇ Chance of a Legendary card</li>
+                    </ul>
+                </div>
+
+                <div class="mt-auto">
+                    <p class="text-3xl text-yellow-100 font-bold mb-4">179DH</p>
+
+                    <label class="text-sm text-gray-300">Quantity</label>
+                    <input type="number" min="1" value="1" class="quantity w-full bg-gray-950 border border-yellow-100/40 p-2 mt-1 mb-4 text-center">
+
+                    <button type="button" data-name="Lucky Pack" data-price="179" class="add-to-cart w-full border border-yellow-100 text-yellow-100 p-3 hover:bg-yellow-100 hover:text-black transition">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+        </article>
+
+    </section>
+
+    <section id="cart" class="w-full max-w-200 border border-yellow-100/50 bg-black/70 backdrop-blur-md p-6 md:p-10 mt-10 shadow-lg shadow-black">
+
+    <h2 class="mideltank-font text-4xl text-yellow-100 mb-2">
+        YOUR CART
+    </h2>
+
+    <p class="text-gray-400 mb-6">
+        Your chosen boosters await their destiny.
+    </p>
+
+    <!-- Cart items will appear here -->
+    <div id="cart-items" class="flex flex-col gap-4">
+        <p class="text-gray-400">Your cart is empty.</p>
+    </div>
+
+    <!-- Total -->
+    <div class="border-t border-yellow-100/30 mt-6 pt-5">
+        <div class="flex justify-between items-center mb-6">
+            <span class="text-xl">TOTAL</span>
+            <span id="cart-total" class="text-3xl text-yellow-100 font-bold">
+                0.00DH
+            </span>
+        </div>
+
+        <button id="checkout"
+            type="button"
+            disabled
+            class="w-full bg-yellow-100 text-black font-bold p-4 hover:bg-yellow-200 transition disabled:opacity-40 disabled:cursor-not-allowed">
+            VALIDATE ORDER
+        </button>
+
+        <button id="clear-cart"
+            type="button"
+            class="w-full border border-red-500 text-red-400 p-3 mt-3 hover:bg-red-950 transition">
+            EMPTY CART
+        </button>
+
+        <p class="text-gray-500 text-xs text-center mt-4">
+            Demo checkout - no real payment required.
+        </p>
+    </div>
+</section>
+<script src="script.js"></script>
 </body>
 </html>
