@@ -55,7 +55,7 @@
     </style>
 
 </head>
-<body class="bg-black w-full min-h-screen bg-no-repeat bg-cover bg-center flex flex-col gap-5">
+<body class="bg-[url(/img/shop-bg.jpg)] w-full min-h-screen bg-no-repeat bg-cover bg-center flex flex-col gap-5">
     <header>
         <nav class="bg-black w-full h-17">
             <div class="flex justify-around items-center w-full h-17">
@@ -70,6 +70,7 @@
                     <a href="opening.html" class="hover:text-yellow-200">Opening Chamber</a>
                     <a href="collection.html" class="hover:text-yellow-200">Collection</a>
                     <a href="deck.html" class="hover:text-yellow-200">My Deck</a>
+                    <a href="Mythoria-arena/arena.html" class="hover:text-yellow-200">Arena</a>
                 </div>
                 <div>
                     <a href="shop.html" class="Shopping cart">
@@ -79,16 +80,14 @@
             </div>
         </nav>
     </header>
-    <main class="w-full min-h-screen flex flex-col items-center gap-5 p-10 md:p-20 bg-black text-white">
-
+    <main class="w-full min-h-screen flex flex-col items-center gap-5 p-10 md:p-20 text-black">
     <h1 class="mideltank-font text-5xl md:text-8xl text-shadow-lg text-center">
         BOOSTER SHOP
     </h1>
-
-    <p class="stormfaze-font text-xl text-center">
+    <p class="stormfaze-font text-xl md:text-2xl text-center">
         Discover, collect, build your legend
     </p>
-
+    
     <section class="flex flex-wrap justify-center items-stretch w-full max-w-300 gap-6 m-5">
 
         <article class="flex flex-col border border-yellow-100/50 w-72 bg-black/70 backdrop-blur-md rounded-sm shadow-lg shadow-black overflow-hidden hover:border-yellow-300 transition duration-300">
@@ -105,7 +104,6 @@
                 <p class="text-sm text-gray-300 text-center">
                     Perfect for aspiring adventurers! Start your journey through Mythoria with a balanced selection of cards and discover powerful allies.
                 </p>
-
                 <div class="border-t border-yellow-100/30 pt-3">
                     <p class="text-yellow-100 font-semibold mb-2">Contains 4 cards</p>
                     <ul class="text-sm text-gray-300 space-y-1">
@@ -119,9 +117,9 @@
                     <p class="text-3xl text-yellow-100 font-bold mb-4">99DH</p>
 
                     <label class="text-sm text-gray-300">Quantity</label>
-                    <input type="number" min="1" value="1" class="quantity w-full bg-gray-950 border border-yellow-100/40 p-2 mt-1 mb-4 text-center">
+                    <input type="number" min="1" value="1" class="quantity w-full bg-gray-950 border border-yellow-100/40 p-2 mt-1 mb-4 text-center text-white">
 
-                    <button type="button" data-name="Beginner Pack" data-price="99" class="add-to-cart w-full border border-yellow-100 text-yellow-100 p-3 hover:bg-yellow-100 hover:text-black transition">
+                    <button type="button" data-name="Beginner Pack" data-price="99" class="stormfaze-font rounded-md add-to-cart w-full border border-yellow-100 text-yellow-100 p-3 hover:bg-yellow-100 hover:text-black transition">
                         ADD TO CART
                     </button>
                 </div>
@@ -157,9 +155,9 @@
                     <p class="text-3xl text-yellow-100 font-bold mb-4">129DH</p>
 
                     <label class="text-sm text-gray-300">Quantity</label>
-                    <input type="number" min="1" value="1" class="quantity w-full bg-gray-950 border border-yellow-100/40 p-2 mt-1 mb-4 text-center">
+                    <input type="number" min="1" value="1" class="quantity w-full bg-gray-950 border border-yellow-100/40 p-2 mt-1 mb-4 text-center text-white">
 
-                    <button type="button" data-name="Summoning of the Legends" data-price="129" class="add-to-cart w-full border border-yellow-100 text-yellow-100 p-3 hover:bg-yellow-100 hover:text-black transition">
+                    <button type="button" data-name="Summoning of the Legends" data-price="129" class="stormfaze-font rounded-md add-to-cart w-full border border-yellow-100 text-yellow-100 p-3 hover:bg-yellow-100 hover:text-black transition">
                         ADD TO CART
                     </button>
                 </div>
@@ -194,16 +192,16 @@
                     <p class="text-3xl text-yellow-100 font-bold mb-4">159DH</p>
 
                     <label class="text-sm text-gray-300">Quantity</label>
-                    <input type="number" min="1" value="1" class="quantity w-full bg-gray-950 border border-yellow-100/40 p-2 mt-1 mb-4 text-center">
+                    <input type="number" min="1" value="1" class="quantity w-full bg-gray-950 border border-yellow-100/40 p-2 mt-1 mb-4 text-center text-white">
 
-                    <button type="button" data-name="Dark Summoning" data-price="159" class="add-to-cart w-full border border-yellow-100 text-yellow-100 p-3 hover:bg-yellow-100 hover:text-black transition">
+                    <button type="button" data-name="Dark Summoning" data-price="159" class="stormfaze-font rounded-md add-to-cart w-full border border-yellow-100 text-yellow-100 p-3 hover:bg-yellow-100 hover:text-black transition">
                         ADD TO CART
                     </button>
                 </div>
             </div>
         </article>
 
-        <article class="flex flex-col border border-yellow-100/50 w-72 bg-black/70 backdrop-blur-md rounded-sm shadow-lg shadow-black overflow-hidden hover:border-blue-400 transition duration-300">
+        <article class="flex flex-col border border-yellow-100/50 w-72 bg-black/70 backdrop-blur-md rounded-md shadow-lg shadow-black overflow-hidden hover:border-blue-400 transition duration-300">
 
             <div class="flex justify-center items-center h-56 bg-gradient-to-b from-blue-950 to-black p-4">
                 <img src="img/mythoria_lucky_pack.png" alt="Lucky Pack" class="h-full max-w-full object-contain hover:-translate-y-2 transition duration-300">
@@ -231,9 +229,9 @@
                     <p class="text-3xl text-yellow-100 font-bold mb-4">179DH</p>
 
                     <label class="text-sm text-gray-300">Quantity</label>
-                    <input type="number" min="1" value="1" class="quantity w-full bg-gray-950 border border-yellow-100/40 p-2 mt-1 mb-4 text-center">
+                    <input type="number" min="1" value="1" class="quantity w-full bg-gray-950 border border-yellow-100/40 p-2 mt-1 mb-4 text-center text-white">
 
-                    <button type="button" data-name="Lucky Pack" data-price="179" class="add-to-cart w-full border border-yellow-100 text-yellow-100 p-3 hover:bg-yellow-100 hover:text-black transition">
+                    <button type="button" data-name="Lucky Pack" data-price="179" class="stormfaze-font rounded-md add-to-cart w-full border border-yellow-100 text-yellow-100 p-3 hover:bg-yellow-100 hover:text-black transition">
                         ADD TO CART
                     </button>
                 </div>
@@ -242,7 +240,7 @@
 
     </section>
 
-    <section id="cart" class="w-full max-w-200 border border-yellow-100/50 bg-black/70 backdrop-blur-md p-6 md:p-10 mt-10 shadow-lg shadow-black">
+    <section id="cart" class="rounded-md w-full max-w-200 border border-yellow-100/50 bg-black/70 backdrop-blur-md p-6 md:p-10 mt-10 shadow-lg shadow-black">
 
     <h2 class="mideltank-font text-4xl text-yellow-100 mb-2">
         YOUR CART
@@ -258,7 +256,7 @@
 
     <div class="border-t border-yellow-100/30 mt-6 pt-5">
         <div class="flex justify-between items-center mb-6">
-            <span class="text-xl">TOTAL</span>
+            <span class="text-xl text-yellow-100">TOTAL</span>
             <span id="cart-total" class="text-3xl text-yellow-100 font-bold">
                 0.00DH
             </span>
@@ -267,13 +265,13 @@
         <button id="checkout"
             type="button"
             disabled
-            class="w-full bg-yellow-100 text-black font-bold p-4 hover:bg-yellow-200 transition disabled:opacity-40 disabled:cursor-not-allowed">
+            class="stormfaze-font rounded-md w-full bg-yellow-100 text-black font-bold p-4 hover:bg-yellow-200 transition disabled:opacity-40 disabled:cursor-not-allowed">
             VALIDATE ORDER
         </button>
 
         <button id="clear-cart"
             type="button"
-            class="w-full border border-red-500 text-red-400 p-3 mt-3 hover:bg-red-950 transition">
+            class="stormfaze-font rounded-md w-full border border-red-500 text-red-400 p-3 mt-3 hover:bg-red-950 transition">
             EMPTY CART
         </button>
 
@@ -281,7 +279,35 @@
             Demo checkout - no real payment required.
         </p>
     </div>
-</section>
-<script src="script.js"></script>
+    </section>
+    </main>
+
+ <script src="script.js"></script>
+ <footer class="bg-[#0A0909] w-full px-10 py-15 border-t border-[#D4B66A]/40">
+    <div class="flex flex-col md:flex-row justify-between gap-12">
+        <div class="flex flex-col gap-3">
+            <h1 class="text-3xl mideltank-font text-[#D4B66A]">MYTHORIA</h1>
+            <p class="text-[#C9C4BB]">Forge your legend. Shape your destiny.</p>
+        </div>
+        <div class="flex flex-col gap-3">
+            <h2 class="text-lg font-bold text-[#D4B66A]">EXPLORE</h2>
+            <h2 class="text-lg font-bold text-[#D4B66A]">EXPLORE</h2>
+            <a href="index.html" class="text-[#C9C4BB] hover:text-[#D4B66A] transition">Home</a>
+            <a href="shop.html" class="text-[#C9C4BB] hover:text-[#D4B66A] transition">Booster Shop</a>
+            <a href="opening.html" class="text-[#C9C4BB] hover:text-[#D4B66A] transition">Opening Chamber</a>
+            <a href="collection.html" class="text-[#C9C4BB] hover:text-[#D4B66A] transition">Collection</a>
+            <a href="deck.html" class="text-[#C9C4BB] hover:text-[#D4B66A] transition">My deck</a>
+            <a href="/Mythoria-arena/arena.html" class="text-[#C9C4BB] hover:text-[#D4B66A] transition">Arena</a>
+        </div>
+        <div class="flex flex-col gap-3">
+            <h2 class="text-lg font-bold text-[#D4B66A]">CONTACT</h2>
+            <p class="text-[#C9C4BB]">Ready to enter the realm?</p>
+            <a href="#" class="text-[#C9C4BB] hover:text-[#D4B66A] transition">Contact Us</a>
+        </div>
+    </div>
+    <div class="mt-12 pt-5 border-t border-white/10 text-center">
+        <p class="text-sm text-[#A7A09A]">&copy; 2026 Mythoria. All rights reserved.</p>
+    </div>
+</footer>
 </body>
 </html>
