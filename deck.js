@@ -41,7 +41,7 @@ function displayCollection() {
         return;
     }
 
-    collectionEmpty.classList.add("hidden")
+    collectionEmpty.classList.add("hidden");
 
     uniqueCards.forEach(card => {
         let alreadyAdded = deck.some(item => item.id === card.id);
