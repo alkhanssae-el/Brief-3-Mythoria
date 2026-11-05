@@ -126,12 +126,22 @@ checkoutButton.addEventListener("click", () => {
     if (total === 0) return;
 
     if (confirm("Confirm your order for " + total + " DH?")) {
-        alert("Order validated successfully!\nTotal: " + total + " DH\n\nNo payment was taken.");
 
-        cart = {};
-        saveCart();
-        renderCart();
+    // Save purchased boosters
+    let inventory = JSON.parse(localStorage.getItem("mythoria-boosters")) || {};
+
+    for (let name in cart) {
+        inventory[name] = (inventory[name] || 0) + cart[name].quantity;
     }
+
+    localStorage.setItem("mythoria-boosters", JSON.stringify(inventory));
+
+    alert("Order validated successfully!\nTotal: " + total + " DH\n\nNo payment was taken.");
+
+    cart = {};
+    saveCart();
+    renderCart();
+}
 });
 
 // Display cart when page opens

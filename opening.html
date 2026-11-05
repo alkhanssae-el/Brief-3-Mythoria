@@ -1,12 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mythoria | Home</title>
+    <title>Mythoria | Opening Chamber</title>
     <link rel="icon" href="img/mythoria_icon.png">
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
 @font-face {
     font-family: "Mideltank";
@@ -54,58 +56,179 @@
 
 
     </style>
-
 </head>
 
-<body>
+<body class="bg-[#0A0909] text-white min-h-screen flex flex-col">
+
+    <!-- NAVBAR -->
     <header>
         <nav class="bg-black w-full h-17">
             <div class="flex justify-around items-center w-full h-17">
-                <div>
-                    <a href="index.html" class="logo">
-                        <img src="img/mythoria_logo.jpg" alt="logo" class="w-65">
-                    </a>
-                </div>
+
+                <a href="index.html">
+                    <img src="img/mythoria_logo.jpg" alt="Mythoria logo" class="w-65">
+                </a>
+
                 <div class="flex gap-15 text-white mideltank-font">
                     <a href="index.html" class="hover:text-yellow-200">Home</a>
                     <a href="shop.html" class="hover:text-yellow-200">Booster Shop</a>
-                    <a href="opening.html" class="hover:text-yellow-200">Opening Chamber</a>
+                    <a href="opening.html" class="text-yellow-200">Opening Chamber</a>
                     <a href="collection.html" class="hover:text-yellow-200">Collection</a>
                     <a href="deck.html" class="hover:text-yellow-200">My Deck</a>
                     <a href="Mythoria-arena/arena.html" class="hover:text-yellow-200">Arena</a>
                 </div>
-                <div>
-                    <a href="shop.html" class="Shopping cart">
-                        <img src="img/shopping-cart.png" alt="shopping cart" class="w-5">
-                    </a>
-                </div>
+
+                <a href="shop.html">
+                    <img src="img/shopping-cart.png" alt="Shopping cart" class="w-5">
+                </a>
+
             </div>
         </nav>
     </header>
-    <main></main>
+
+
+    <main class="flex-1 w-full flex flex-col items-center px-6 py-16 gap-16">
+
+        <!-- INTRODUCTION -->
+        <section class="text-center flex flex-col gap-4">
+
+            <h1 class="mideltank-font text-5xl md:text-7xl text-[#EDD693]">
+                THE OPENING CHAMBER
+            </h1>
+
+            <p class="dynatecha-font text-lg text-[#C9C4BB]">
+                Unseal the magic. Discover your destiny.
+            </p>
+
+            <p class="text-gray-400 text-sm">
+                Open your boosters and discover the cards hidden inside.
+            </p>
+
+        </section>
+
+
+        <!-- AVAILABLE BOOSTERS -->
+        <section class="w-full max-w-6xl flex flex-col gap-10">
+
+            <div class="text-center">
+                <h2 class="mideltank-font text-4xl text-[#D4B66A]">
+                    YOUR BOOSTERS
+                </h2>
+
+                <p class="text-gray-400 mt-2">
+                    Choose a booster to reveal its secrets.
+                </p>
+            </div>
+
+            <div id="available-boosters"
+                class="flex flex-wrap justify-center gap-10">
+
+                <!-- Boosters will be displayed here by JavaScript -->
+
+            </div>
+
+            <p id="empty-boosters"
+                class="hidden text-center text-gray-400 py-10">
+                You don't have any boosters yet. Visit the Booster Shop to get started!
+            </p>
+
+        </section>
+
+
+        <!-- OPENING MESSAGE -->
+        <section id="opening-section"
+            class="hidden w-full max-w-6xl flex flex-col items-center gap-10 border-t border-[#D4B66A]/40 pt-16">
+
+            <div class="text-center flex flex-col gap-3">
+
+                <h2 class="mideltank-font text-4xl text-[#EDD693]">
+                    THE SUMMONING
+                </h2>
+
+                <p id="opening-title" class="text-gray-300">
+                    Your cards have been revealed!
+                </p>
+
+                <p id="special-message"
+                    class="text-xl font-bold text-[#EDD693]">
+                </p>
+
+            </div>
+
+
+            <!-- REVEALED CARDS -->
+            <div id="revealed-cards"
+                class="flex flex-wrap justify-center gap-8 w-full">
+
+                <!-- Cards will be displayed here -->
+
+            </div>
+
+
+            <div class="flex flex-wrap justify-center gap-4">
+
+                <a href="collection.html">
+                    <button class="stormfaze-font bg-[#EDD693] text-black px-8 py-3 rounded-md hover:bg-[#D4B66A] transition cursor-pointer">
+                        OPEN MY GRIMOIRE
+                    </button>
+                </a>
+
+                <button id="open-another"
+                    class="stormfaze-font border border-[#D4B66A] text-[#EDD693] px-8 py-3 rounded-md hover:bg-[#D4B66A] hover:text-black transition cursor-pointer">
+                    OPEN ANOTHER BOOSTER
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
     <footer class="bg-[#0A0909] w-full px-10 py-15 border-t border-[#D4B66A]/40">
-    <div class="flex flex-col md:flex-row justify-between gap-12">
-        <div class="flex flex-col gap-3">
-            <h1 class="text-3xl mideltank-font text-[#D4B66A]">MYTHORIA</h1>
-            <p class="text-[#C9C4BB]">Forge your legend. Shape your destiny.</p>
+
+        <div class="flex flex-col md:flex-row justify-between gap-12">
+
+            <div class="flex flex-col gap-3">
+                <h2 class="text-3xl mideltank-font text-[#D4B66A]">
+                    MYTHORIA
+                </h2>
+
+                <p class="text-[#C9C4BB]">
+                    Forge your legend. Shape your destiny.
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <h2 class="text-lg font-bold text-[#D4B66A]">EXPLORE</h2>
+
+                <a href="index.html" class="text-[#C9C4BB] hover:text-[#D4B66A]">Home</a>
+                <a href="shop.html" class="text-[#C9C4BB] hover:text-[#D4B66A]">Booster Shop</a>
+                <a href="opening.html" class="text-[#C9C4BB] hover:text-[#D4B66A]">Opening Chamber</a>
+                <a href="collection.html" class="text-[#C9C4BB] hover:text-[#D4B66A]">Collection</a>
+                <a href="deck.html" class="text-[#C9C4BB] hover:text-[#D4B66A]">My Deck</a>
+                <a href="Mythoria-arena/arena.html" class="text-[#C9C4BB] hover:text-[#D4B66A]">Arena</a>
+            </div>
+
+            <div class="flex flex-col gap-3">
+                <h2 class="text-lg font-bold text-[#D4B66A]">CONTACT</h2>
+                <p class="text-[#C9C4BB]">Ready to enter the realm?</p>
+                <a href="#" class="text-[#C9C4BB] hover:text-[#D4B66A]">Contact Us</a>
+            </div>
+
         </div>
-        <div class="flex flex-col gap-3">
-            <h2 class="text-lg font-bold text-[#D4B66A]">EXPLORE</h2>
-            <a href="index.html" class="text-[#C9C4BB] hover:text-[#D4B66A] transition">Home</a>
-            <a href="shop.html" class="text-[#C9C4BB] hover:text-[#D4B66A] transition">Booster Shop</a>
-            <a href="opening.html" class="text-[#C9C4BB] hover:text-[#D4B66A] transition">Opening Chamber</a>
-            <a href="collection.html" class="text-[#C9C4BB] hover:text-[#D4B66A] transition">Collection</a>
-            <a href="deck.html" class="text-[#C9C4BB] hover:text-[#D4B66A] transition">My deck</a>
-            <a href="/Mythoria-arena/arena.html" class="text-[#C9C4BB] hover:text-[#D4B66A] transition">Arena</a>
+
+        <div class="mt-12 pt-5 border-t border-white/10 text-center">
+            <p class="text-sm text-[#A7A09A]">
+                &copy; 2026 Mythoria. All rights reserved.
+            </p>
         </div>
-        <div class="flex flex-col gap-3">
-            <h2 class="text-lg font-bold text-[#D4B66A]">CONTACT</h2>
-            <p class="text-[#C9C4BB]">Ready to enter the realm?</p>
-            <a href="#" class="text-[#C9C4BB] hover:text-[#D4B66A] transition">Contact Us</a>
-        </div>
-    </div>
-    <div class="mt-12 pt-5 border-t border-white/10 text-center">
-        <p class="text-sm text-[#A7A09A]">&copy; 2026 Mythoria. All rights reserved.</p>
-    </div>
-</footer>
+
+    </footer>
+
+
+    <script src="opening.js"></script>
+
 </body>
+</html>
